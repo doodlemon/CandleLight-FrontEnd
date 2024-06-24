@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <title>Satisfaction Survey</title>
+  <style>
+   button{
+    display: block;
+    margin: 20px auto;
+    background: red;
+    color: white;
+    border: 0;
+    padding: 6px 10px;
+  }
+  
+  .main-popup{
+    background: #ffccff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+	color: purple;
+	border:3px solid purple;
+  }
+  
+  .popup{  
+    text-align: center;
+    width: 100%;
+    max-width: 350px;
+    margin: auto;  
+    margin-top: 300px;
+    padding: 30px;
+    background: white;
+    position: relative;
+	border:3px solid purple;
+  }
+  
+  .popup a{
+    background: #800080;
+    color: white;
+    padding: 7px 11px;
+    text-decoration: none;
+   
+  }
+  
+  .popup-close{
+    position: absolute;
+    cursor: pointer;
+    top: 4px;
+    right: 7px;
+  
+  }
+  </style>
+</head>
+<body>
+  <div id="questions">
+    <div style="background-color:#8000803a" class=" py-3">
+      <div class="container">
+        <div class="row card mx-6 w-50 py-3">
+          <div class="col-3 w-25"></div>
+          <div class="col-6">
+            <form class="question-form">
+              
+              <div class="text-center">
+                <button style="background-color:purple; color:white">Haydi Tıkla</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-3 w-25"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-popup">
+    
+    <div class="popup">
+      <div class="popup-close">x</div>
+      <div class="popup-content">
+        <h3>Fuzuli</h3>
+        <p>Sunu sakın unutma: Hayatında karışıklık istemiyorsan kural basit; Eşyaları aldığın yere, insanlarıda hakkettiği yerde bırakacaksın...</p>
+        <a href="#">Siteye git</a>
+      </div>
+    </div>
+    
+  </div>
+
+  <script>
+    const button=document.querySelector('button');
+    const mainPopup=document.querySelector('.main-popup');
+
+    button.addEventListener('click',()=>{
+       mainPopup.style.display='block';
+    })
+
+
+    close.addEventListener('click',()=>{
+      mainPopup.style.display='none';
+    })
+
+   </script>
+
+</body>
+</html>

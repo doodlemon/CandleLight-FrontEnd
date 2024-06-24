@@ -1,0 +1,259 @@
+*{
+  margin:0; padding:0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  outline: none; border:none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: .2s linear;
+}
+
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  overflow-x: hidden;
+}
+
+.logo{
+  font-size: 3rem;
+  color:#ff80aa;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar a{
+  font-size: 2rem;
+  padding:0 1.5rem;
+  color:#ff80aa;
+}
+
+.navbar a:hover{
+ color: #e84393;
+  text-shadow: 2px 4px 5px #e84393;
+}
+
+.icons a{
+  font-size: 2.5rem;
+  color:#ff80aa;
+  margin-left: 1.5rem;
+}
+
+.icons a:hover{
+  color:#e84393;
+}
+
+
+section{
+  padding:2rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.btn{
+  display: inline-block;
+  margin-top: 3.5rem;
+  margin-left: 17rem;
+  border-radius: 1rem;
+  background: white;
+  color:black;
+  padding:1.5rem 3rem;
+  cursor: pointer;
+  font-size: 1.8rem;
+  border-style: solid;
+}
+
+.btn:hover{
+  background: #e84393;
+}
+
+header{
+  position: fixed;
+  top:0; left:0; right:0;
+  background:#fff;
+  z-index: 1000;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+.container{
+  display: flex;
+  font-size: 2rem;
+}
+
+.container label {
+  font-size: 15px;
+margin-bottom: 10px;
+}
+
+body {
+  background-image: white;
+  font-family: Verdana;
+}
+    
+form {
+  background-color: #fff;
+  max-width: 700px;
+        margin-top: 20px;
+        margin-left: auto;
+        margin: auto auto 30px auto;
+        margin-right: auto;
+  padding: 30px 20px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #e84393;
+  text-align: center;
+}
+
+#toggler{
+  display: none;
+}
+
+header .fa-bars{
+  font-size: 3rem;
+  color:#333;
+  border-radius: .5rem;
+  padding:.5rem 1.5rem;
+  cursor: pointer;
+  border:.1rem solid rgba(0,0,0,.3);
+  display: none;
+}
+
+.banner-container{
+  background:url(contactsbanner.png) no-repeat;
+  background-size: cover;
+  min-height: 13vh;
+  margin-top: 70px;
+}
+
+.banner{
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+}
+
+
+button {
+  background-color: #000000;
+  border: 1px solid black;
+  border-radius: 20px;
+  font-family: inherit;
+  font-size: 16px;
+  display: flex;
+  width: 100px;
+  height: 30px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  display: block;
+  margin: 10px auto;
+}
+button:hover{
+  background: #e84393;
+}
+
+
+  .main-popup{
+    background: url(https://i.pinimg.com/474x/1c/89/b2/1c89b20d3370159a6c5a7d943ab97e44.jpg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+	color: #ff80aa;
+	border:3px solid #e84393;
+  }
+  
+  .popup{  
+    text-align: center;
+    width: 100%;
+    max-width: 350px;
+    margin: auto;  
+    margin-top: 300px;
+    padding: 30px;
+    background: white;
+    position: relative;
+	border:3px solid black;
+  }
+  
+  .popup-close{
+    position: absolute;
+    cursor: pointer;
+    top: 4px;
+    right: 7px;
+  
+  }
+
+  
+@media (max-width:991px){
+  
+  html{
+      font-size: 55%;
+  }
+  }
+  
+  
+  @media (max-width:768px){
+  
+  .col-25, .col-75, input[type=submit] { width: 100%; margin-top: 0; } 
+  
+  header .fa-bars{
+      display: block;
+  }
+  
+  .navbar{
+      position:absolute;
+      top:100%; left:0; right:0;
+      background:#eee;
+      border-top: .1rem solid rgba(0,0,0,.1);
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  
+  header #toggler:checked ~ .navbar{
+      clip-path:inherit;
+  }
+  
+  .navbar a{
+      display: block;
+      position: relative;
+      background-color: #ff80aa;
+      margin:1.5rem;
+      padding:1.5rem;
+      background:#fff;
+      border:.1rem solid #ff80aa;
+  }
+  
+  
+  
+  h2{
+  text-align: center;
+  font-size: 250%;
+  }
+  }
+  
+  
+  @media (max-width:450px){
+  
+  html{
+      font-size: 50%;
+  }
+  
+  .heading{
+      font-size: 3rem;
+  }
+  
+  main{
+      width: 100%;
+  }  
+  }

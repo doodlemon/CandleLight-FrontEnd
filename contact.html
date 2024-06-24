@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CandyLight Contacts</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="myscript.js"></script>
+</head>
+
+
+<header>
+    <section class="flex">
+
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+
+        <a href="#" class="logo">CandyLight</a>
+
+        <nav class="navbar">
+            <a href="home.html">homepage</a>
+            <a href="winter.html">products</a>
+            <a href="contact.html">contact</a>
+            <a href="about.html">about</a>
+            <a href="review.html">reviews</a>
+        </nav>
+
+        <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="survey.html" class="fas fa-gift"></a>
+        </div>
+    </section>
+</header>
+
+<body>
+    <div class="banner-container">
+        <section class="banner"></section>
+    </div>
+    <div class="contactbody">
+        <div class="leftside">
+            <span>CandyLight Contact Page</span>
+            <h2>Contact Information</h2>
+            <p> Sakarya University Esentepe Campus 54050 Serdivan / SAKARYA / TURKEY</p>
+            <p> +90 000 000 00 00</p>
+            <p> +90 (264) 295 54 54</p>
+            <h2>Our Social Media Accounts</h2>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </div>
+        <div class="contactform">
+            <form id="myForm" action="https://example.com/submit.php" method="POST" onsubmit="return validateForm()">
+                <h1>Contact Us</h1>
+                <div class="input__container">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required />
+                </div>
+                <div class="input__container">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required />
+                </div>
+                <div class="input__container">
+                    <label for="message">Message</label>
+                    <input id="message" name="message" rows="4" required></input>
+                </div>
+                <div class="input__container">
+                    <label for="age">Your age</label>
+                    <input type="number" id="age" min="18" required>
+                </div>
+                <div>
+                <button type="button" onclick="validateForm()">Submit</button>
+            </div>
+            </form>
+        </div>
+        <div id="pop-up" class="pop-up">
+            <div class="pop-up-header">
+                <span class="pop-up-close" onclick="hidePopUp()">&times;</span>
+                <h2>Thank You!</h2>
+            </div>
+            <div class="pop-up-content">
+                <p>Your form has been submitted successfully. We will reply to you ASAP!</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="contact.js"></script>
+    <script src="myscript.js"></script>
+</body>
+<hr>
+<section class="footer">
+
+    <div class="footer-container">
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#">home</a>
+            <a href="#">about</a>
+            <a href="#">products</a>
+            <a href="#">review</a>
+            <a href="#">contact</a>
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="#">my account</a>
+            <a href="#">my order</a>
+            <a href="#">my favorite</a>
+        </div>
+
+        <div class="box">
+            <h3>where</h3>
+            <a href="#">Türkiye</a>
+            <a href="#">USA</a>
+            <a href="#">japan</a>
+            <a href="#">france</a>
+        </div>
+
+        <div class="box">
+            <h3>contact</h3>
+            <a href="#">+966-345-7890</a>
+            <a href="#">candylight@gmail.com</a>
+            <a href="#">Japan, Tokyo - 400104</a>
+            <img src="payment.png" alt="">
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="credit"><span> CandyLight </span> | all rights reserved </div>
+    </footer>
+
+</html>

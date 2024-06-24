@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CandyLight Best-Sellers</title>
+  <link rel="stylesheet" href="bestseller.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<header>
+  <section class="flex">
+
+    <input type="checkbox" name="" id="toggler">
+    <label for="toggler" class="fas fa-bars"></label>
+
+    <a href="#" class="logo">CandyLight</a>
+
+    <nav class="navbar">
+      <a href="home.html">homepage</a>
+      <a href="products.html">products</a>
+      <a href="contact.html">contact</a>
+      <a href="about.html">about</a>
+      <a href="review.html">reviews</a>
+    </nav>
+
+    <div class="icons">
+      <div class="icon">
+        <a href="#" class="fas fa-heart"></a>
+        <div class="shopping">
+          <span class="quantity">0</span>
+          <a href="#" class="fas fa-shopping-cart"></a>
+        </div>
+        <a href="survey.html" class="fas fa-gift"></a>
+      </div>
+    </div>
+  </section>
+</header>
+<div class="banner-container">
+  <section class="banner" id="banner"></section>
+</div>
+
+<nav class="productnav">
+  <a href="bestseller.html">Best-Sellers</a>
+  <a href="products.html">All-Cake Collection</a>
+  <a href="winter.html">Winter Collection</a>
+</nav>
+
+<body class="">
+  <h2>.°˖✧ BEST-SELLERS ✧˖°.
+  </h2>
+  <div class="list">
+
+  </div>
+
+  <div class="card">
+    <h1>Cart</h1>
+    <ul class="listCard">
+    </ul>
+    <div class="form-popup" id="buy-form">
+      <form class="form-container">
+        <!-- Your form fields here -->
+        <button type="button" class="cancel" onclick="closeForm()">x</button>
+        <input type="text" name="name" placeholder="Enter your name" required>
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <input type="text" name="adress" rows="3" placeholder="Enter your adress" required>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+    <div class="checkOut">
+      <div class="total">0</div>
+      <div class="closeShopping">Close</div>
+      <button id="buy-button">Buy now</button>
+    </div>
+  </div>
+
+  <script src="bestseller.js"></script>
+  <script src="myscript.js"></script>
+</body>
+<section class="footer">
+
+  <div class="footer-container">
+
+    <div class="box">
+      <h3>quick links</h3>
+      <a href="#">home</a>
+      <a href="#">about</a>
+      <a href="#">products</a>
+      <a href="#">review</a>
+      <a href="#">contact</a>
+    </div>
+
+    <div class="box">
+      <h3>extra links</h3>
+      <a href="#">my account</a>
+      <a href="#">my order</a>
+      <a href="#">my favorite</a>
+    </div>
+
+    <div class="box">
+      <h3>where</h3>
+      <a href="#">Türkiye</a>
+      <a href="#">USA</a>
+      <a href="#">japan</a>
+      <a href="#">france</a>
+    </div>
+
+    <div class="box">
+      <h3>contact</h3>
+      <a href="#">+123-456-7890</a>
+      <a href="#">candylight@gmail.com</a>
+      <a href="#">Japan, Tokyo - 400104</a>
+      <img src="payment.png" alt="">
+    </div>
+  </div>
+
+  <div class="credit"><span>CandyLight</span> | all rights reserved <span id="clock"></span></div>
+
+</section>
+
+</html>
