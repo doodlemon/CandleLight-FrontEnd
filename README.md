@@ -1,5 +1,5 @@
-# CandleLight Webshop Welcome to CandleLight, an imaginary online store where you can browse and purchase exquisite candles for any occasion. This project is a front-end web application built using HTML, CSS, and some Javascript.
-## Features
+# Welcome to CandleLight, an imaginary online store where you can browse and purchase exquisite candles for any occasion. This project is a front-end web application built using HTML, CSS, and some Javascript.
+## Features (2nd year of university project)
 **Responsive Design**: Looks great on all devices, from desktop to mobile.
 **Product Listings**: Browse a variety of candles with detailed descriptions and prices.
 **Shopping Cart**: Add, remove, and update products in the shopping cart.
