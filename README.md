@@ -16,5 +16,4 @@ Check out this video walkthrough of the CandleLight website!
 
 [![CandleLight Demo](https://img.youtube.com/vi/ntv7DkWZsiM/0.jpg)](https://www.youtube.com/watch?v=ntv7DkWZsiM)
 
-Feel free to customize this README to better fit your project! If you need any more assistance, just let me know.
 masajesri03.MJ@gmail.com
